@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "20a4a334-d20a-4b53-9dd0-6d9cba0e0366",
+		"name": "flask_jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/authors/e6c5a49e700911eabdedacde48001122",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-tokens",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwdWJsaWNfaWQiOiJlNmM1YTQ5ZTcwMDkxMWVhYmRlZGFjZGU0ODAwMTEyMiIsImV4cCI6MTU4NTMwNjk5OX0.WLi0Ygtz68gURWXLQrFBVaxaU-bwVNimuAY147aMAlU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"srikath\",\n\t\"country\": \"india\",\n\t\"book\": \"safasF\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/authors/e6c5a49e700911eabdedacde48001122",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"authors",
+						"e6c5a49e700911eabdedacde48001122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/authors/srikath",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-tokens",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwdWJsaWNfaWQiOiJlNmM1YTQ5ZTcwMDkxMWVhYmRlZGFjZGU0ODAwMTEyMiIsImV4cCI6MTU4NTMwNjk5OX0.WLi0Ygtz68gURWXLQrFBVaxaU-bwVNimuAY147aMAlU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"srikath\",\n\t\"country\": \"india\",\n\t\"book\": \"safasF\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/authors/srikath",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"authors",
+						"srikath"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/authors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-tokens",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwdWJsaWNfaWQiOiJlNmM1YTQ5ZTcwMDkxMWVhYmRlZGFjZGU0ODAwMTEyMiIsImV4cCI6MTU4NTMwNjk5OX0.WLi0Ygtz68gURWXLQrFBVaxaU-bwVNimuAY147aMAlU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"srikath\",\n\t\"country\": \"india\",\n\t\"book\": \"safasF\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/authors",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "john",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "srikanth",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
